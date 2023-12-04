@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bintang Buana</title>
+</head>
+<body>
+
+    <header>
+        <h1>PT Bintang Buana</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>PT Bintang Buana adalah perusahaan yang berdedikasi dalam produksi dan penyediaan produk berkualitas 
+            tinggi di bidang sabun dan tisu. Berlokasi di Palembang, perusahaan ini mengusung visi untuk menjadi 
+            pemimpin industri dengan fokus pada inovasi, keberlanjutan, dan kepuasan pelanggan.
+            Dengan komitmen terhadap kualitas, PT Bintang Buana memproduksi beragam jenis sabun dengan formulasi 
+            khusus yang menjaga kelembutan kulit dan memberikan kebersihan maksimal. Selain itu, perusahaan ini 
+            juga menawarkan berbagai varian tisu berkualitas tinggi untuk memenuhi kebutuhan sehari-hari pelanggan.
+            Keunggulan PT Bintang Buana terletak pada penggunaan bahan-bahan alami yang ramah lingkungan, proses 
+            produksi modern, dan tim profesional yang berdedikasi. Dengan menggabungkan inovasi dan keberlanjutan,
+            PT Bintang Buana tidak hanya menyediakan produk unggul tetapi juga memberikan kontribusi positif 
+            terhadap lingkungan sekitar.
+            Selalu berorientasi pada kepuasan pelanggan, PT Bintang Buana siap memberikan layanan terbaik dengan 
+            produk-produk yang bermutu tinggi, menjadikan mereka mitra terpercaya untuk kebutuhan sabun dan tisu di 
+            Palembang dan sekitarnya.</p>
+    </section>
+
+    <section id="products">
+        <h2>Produk Kami</h2>
+        <div class="product" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <img src="sino.jpg" alt="Sabun Sino">
+            <h3>Sabun Cuci Piring Sino</h3>
+            <p>Sabun Cuci Piring 2 liter Sino</p>
+        </div>
+        <div class="product" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="montiss"><img src="montiss.jpg" alt="Tisu Montis">
+            <h3>Tissue Montis</h3>
+            <p>Tisu MONTISS berisi 50 sheets, 2 ply.</p></div>
+        </div>
+        <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+    </section>
+
+    <section id="contact">
+        <h2>Hubungi Kami</h2>
+        <form id="contactForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" onclick="submitForm()">Kirim Pesan</button>
+            <br><br><br><br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 PT Bintang Buana. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
